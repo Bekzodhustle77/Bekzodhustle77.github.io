@@ -1,0 +1,61 @@
+
+#navbar{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    display: inline;
+    list-style-type: none;
+}
+ .li-content{
+     padding: 0 11px;
+ }
+
+
+
+
+.fa-mobile{
+    align-self: center;
+    margin-left: 32px;
+    margin-right: 27px;
+    margin-top: 22px;
+}
+
+li span{
+    vertical-align: 10px !important;
+    font-size: 18px;
+    margin-left: -15px;
+    font-family: 'Prosto';
+}
+
+
+
+.popup{
+    background: #fff;
+    position: absolute !important;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    height: 100px;
+    width: 80%;
+    align-self: center;
+    border-radius: 0.25rem;
+    left: -8% !important;
+    padding: 0 20px;
+    box-shadow: 0 30px 40px 0 rgba(143, 138, 131, 0.4);
+}
+
+.li-content:hover{
+    color: #0077b9;
+    cursor: pointer;
+}
+

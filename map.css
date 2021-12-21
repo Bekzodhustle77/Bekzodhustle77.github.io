@@ -1,0 +1,1104 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+	color: inherit;
+}
+
+body{
+	max-width: 1400px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+}
+header{
+    position: fixed;
+    z-index: 555;
+	width: 100%;
+	max-width: 1400px;
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.43) 90%);	
+}
+
+header nav{
+    display: block;
+    position: relative;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#models{
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .5;
+    cursor: pointer;
+}
+
+#models:hover{
+    opacity: 1;
+}
+
+.bunch-of-phones li:hover > span{
+    color: #0a76c7 !important;
+}
+/* #models{
+	padding: 35px 0px 35px 35px;
+	font-weight: 500;
+    line-height: 50px;
+} */
+
+header nav ul li{
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar{
+    display: none;
+}
+.close{
+    display: none;
+}
+
+.fa-angle-down{
+        transition: all ease-in-out 100ms;
+}
+
+#models:hover > .fa-angle-down{
+    transform: rotate(-90deg);
+}
+
+header nav .six-fold{
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav .six-fold .s-child:nth-child(1){
+    padding: 0px 20px;
+}
+header nav .six-fold .s-child:nth-child(5){
+    padding: -5px 20px !important;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.getbuy{
+    display: block;
+    border-radius: 6px;
+    background: #fff;
+    padding: 10px  30px!important;
+    opacity: 1 !important;
+    color: #000 !important;
+}
+header nav .six-fold .s-child:nth-child(1){
+    /* float: left; */
+    margin-right: auto;
+}
+header nav .six-fold .s-child a{
+    color: #fff;
+    display: block;
+    padding: 30px 20px;
+    opacity: 0.7;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.logo_mdc{
+    opacity: 1 !important;
+}
+header nav .six-fold .s-child a:hover{
+    opacity: 1;
+}
+.bunch-of-phones{
+    display: none;
+    position: absolute;
+    top: -100%;
+}
+.bunch-of-phones img{
+    height: 30px;
+    width: 18px;
+}
+#models:hover > .bunch-of-phones{
+    z-index: 2;
+    border-radius: 6px;
+    padding: 0;
+    align-self: center;
+    position: absolute;
+    max-width: 1440px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    top: 100%;
+    left: 5%;
+    height: 55px;
+    animation: flipInX ease-in-out 600ms;
+    box-shadow: 0 30px 40px 0 rgba(143, 138, 131, 0.4);
+}
+.bunch-of-phones span{
+    font-family: 'Prosto One';
+    vertical-align: 8px;
+    font-size: 15px;
+	margin-left: 10px;
+	color: #000;
+}
+
+
+  @keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  .flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+  }
+
+/*==============================================
+================================================
+               MODELS POPUP
+===============================================
+===============================================*/
+
+
+.ul-container{
+    /* z-index: 10; */
+    margin-top: 0;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.children{
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;        
+}
+
+.children:nth-child(1){
+    margin-right: auto;
+}
+.globby{
+    width: 23px;
+    height: 23px;
+}
+.map{
+    max-width: 100%;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    height: 58px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 52px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.12;
+    color: #43484d;
+}
+
+.central{
+    width: 100%;
+	margin-top: -500px;
+}
+
+.phone-models{
+    margin: 0 auto;    
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.phone-models li{
+    list-style-type: none;
+    font-family: Prosto;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #354052;
+	font-family: 'Prosto One';
+}
+
+.phone-models li:hover{
+    color: #0a76c7;
+}
+
+.small{
+    width: 180px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e6eaee;
+    margin-right: 10px;
+    margin-bottom: 12px;
+	
+}
+
+.small img{
+    vertical-align: middle;
+    width: 24.6px;
+    height: 41.6px;
+    margin: 9px 5px 15px 9px;
+	
+}
+
+.fa-angle-right{
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/*===============================
+
+ACCORDION
+================================*/
+.accordion{
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: flex-start;
+}
+
+.w3-hide{
+    display: none;
+    height: 0;
+} 
+
+.w3-show{
+    display: flex;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+    height: 0;
+}
+
+.font{
+    border-radius: 4px;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in;
+    padding-left: 24px;
+}
+.w3-animate-zoom{
+    padding-bottom: 10px;
+}
+
+.w3-container h2{
+    width: 946px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.font h2 a{
+    line-height: 1.27;    
+    font-weight: bold;    
+    color: #303234;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-decoration: none;    
+    
+}
+
+.fa-plus{
+    background-color: #ffffff;
+    border: none;
+    border-radius: 1px;
+    color: #e2e2e2;
+    font-size: 50px;
+    float: left;
+    margin-top: 4px;
+}
+
+.w3-container p{
+  width: 793px;
+  opacity: 0.7;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  color: #494b4e;
+  background-color: #ffffff;
+  margin-left: 55px;
+  margin-top: -20px;
+}
+#three-word{
+    color: #0a76c7;
+}
+
+.plus-close {
+    transition: all 0.1s linear;
+    margin-right: 20px;
+}
+
+.plus-close.down{
+    transform: rotate(45deg);
+    color: #0a76c7;
+}
+
+
+/*TRANSITION PART*/
+
+/*==================================================
+ ==========================FOOTER===================
+ ===================================================*/
+
+
+/*-----MAIN FOOTER CONTAINER---*/
+.footer {
+    overflow: hidden;
+    width:  100%;
+    background: #f8f9fa; 
+    margin-bottom: -20px;
+    
+ } 
+ /*-----FLEXBOX BEHAVIOUR--*/
+.final{
+    align-items: baseline;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+.foremost{
+    align-self: flex-start;
+}
+
+ /*-----KILLING LEFT MARGIN--*/
+.media-links{
+    margin-left: -40px;
+}
+
+.mdclogo img{
+    height: 60px;
+    width: 120px;
+}
+.des3 {
+
+    width: 270px;
+    font-size: 16px;
+    color: #444444;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    font-family: 'Roboto'; 
+
+}
+
+/*-----1ST ICON----*/
+.i1{
+    border-radius: 5px 0px 0px 5px;
+}
+/*-----3RD ICON----*/
+.i3{
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*-----INFO LINKS---*/
+.our-product,
+.about-company {
+     font-family: 'Prosto';
+     font-size: 1em;
+     margin-bottom: 20px;
+ }
+
+li {
+    list-style-type: none;
+}
+
+.ftr {
+    font-family: 'Roboto';
+    color: #444;
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 400;
+    line-height: 1;
+}
+
+/*-----SOCIAL LINKS---*/
+.media-links{
+    list-style: none;
+ 
+}
+.media-links li{
+    display: inline;
+}
+.media-links .lg {
+    background-color: #fff;
+    padding: 12px;
+    padding-top: 14px;
+    border: 1px solid#e7e8ea;
+}
+.media-links li:nth-child(2){
+    margin-left: -5px;
+    margin-right: -5px;
+}
+ /*-----ALL RIGHTS RESERVED---*/
+.footer .copyright {
+    font-size: 1em;
+    font-family: 'Roboto Regular';
+    border-top: 1px solid silver;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #999ea8;
+}
+.container {
+	width: 84%;
+	margin: 0 auto;
+}
+
+/**************  First Part   ******************/
+#map {
+	height: 804px;
+}
+
+.navigator {
+	position: relative;
+	bottom: 500px;
+	margin-left: 8%;
+	height: 580px;
+	width: 360px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 26px;
+	box-shadow: 1px 6px 43px 0 rgba(0, 0, 0, 0.28);
+}
+
+.choose-country {
+	height: 60px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.07);
+}
+
+.Choose-your-country {
+	padding: 0 0 10px 30px;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #5e6977;
+}	
+
+.contry-list {
+	height: 54px;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 54px;
+	background-color: #0a76c7;
+}
+
+button {
+	height: 100%;
+	width: 25%;
+	opacity: 0.7;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 14px;
+	color: #ffffff;
+	background-color: #0a76c7;
+	border: 0;
+}
+
+button:hover {
+	opacity: 1;
+	border-bottom: 1px solid white;
+	transition: .4s;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.turkey:hover, 
+.uae:hover,
+.kyr:hover,
+.uzb:hover {
+	box-sizing: content-box;
+	opacity: 1;
+	border-bottom: 1px solid white;
+	transition: .3s;
+	cursor: pointer;
+}
+
+
+
+.address-list {
+	height: calc(100% - 110px);
+	background-color: #0a76c7;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	margin-top:1px;
+}
+
+
+.mdc-address {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	cursor: pointer;
+}
+
+.order {
+	margin-right: 20px;
+	align-self: center;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: right;
+	color: #ffffff;
+}
+
+.for-brand {
+	margin-right: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	background-color: white;
+	text-align: center;
+}
+
+.min-logo {
+	width: 50px;
+	height: 55px;
+}
+
+
+
+.addres {
+	flex-grow: 2;
+	font-family: Roboto;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 15px;
+	color: #ffffff;
+}
+
+
+.olcha {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	opacity: .8;
+	cursor: pointer;	
+}
+
+.olcha:hover {
+	transition: .5s;
+	opacity: 1;
+}
+
+.olcha-brand {
+	width: 60px;
+	height: 60px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	background-image: url('img/getbuy/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*=========================MEDIA QUERY===============================*/
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+   
+	*{
+        max-width: 480px;
+        opacity: 1;
+	}	
+	
+	body{
+        max-width: 480px;        
+        width: 100%;
+    }
+    header{
+        position: static;
+        /* position: fixed; */
+    }
+
+    .mdc_logo{
+        height: 30px;
+        padding-top: 2px;
+    }
+    #models{
+        padding: 30px 0px 8px 10px !important;
+        margin: 0;
+        opacity: 1 !important;
+        display: block;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-size: 22px !important;
+    }
+
+    #getbuy{
+        color: #000 !important;
+    }
+
+    header nav{
+        z-index: 2;
+        max-width: 480px;
+        min-width: 320px;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        /* opacity: 1 !important; */
+        position: fixed;
+        background-color: rgba(0, 112, 196, 0.91);
+        transition: .5s;
+        box-shadow: none;
+    }
+    .fa-angle-down{
+        color: #fff;
+    }
+    .six-fold .s-child a{
+        color: #fff !important;
+        opacity: 1 !important;
+        font-size: 20px !important;
+    }
+
+    header nav .six-fold{
+        padding: 0;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav .six-fold .s-child:nth-child(5){
+        align-self: center;
+    }
+
+    header nav .six-fold .s-child{
+        display: block;
+        float: none;
+        margin: 10px 0;
+    }
+
+    .menu-bar{
+        display: block;
+        width: 100%;
+	    background-image: linear-gradient(0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.43) 90%);	
+    }
+
+    .menu-bar .bt-menu{
+        display: block;
+        padding: 10px 20px; 
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 30px;
+    }
+
+    .menu-bar span{
+        float: right;
+        font-size: 40px;
+    }
+
+    .open{
+        color: #fff;
+        line-height: 35px;
+    }
+
+    .close{
+        display: block;
+        position: absolute;
+        top: 0;
+        color: #fff;
+        left: 93%;
+        font-size: 35px;
+    }
+
+    .logo_mdc{
+        display: none;
+        visibility: hidden;
+        margin: 0;
+        height: 0;
+        width: 0;
+        padding: 0;
+    }
+
+    header nav .six-fold .s-child:nth-child(5){
+        background: #fff;
+        border-radius: 6px;
+        padding: 0px 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #models:hover > .bunch-of-phones{
+        padding-left: 15px;
+        position: static;
+        /* max-width: 480px; */
+        width: 100%;
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+        background: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .bunch-of-phones li{
+        animation: fadeInDown ease-in-out 600ms;
+        margin-top: 3px;
+    }
+
+    .bunch-of-phones span{
+        font-family: 'Prosto One';
+        vertical-align: 8px;
+        font-size: 12px;
+        margin-left: 10px;
+        color: #fff;
+    }
+
+    .bunch-of-phones img{
+        height: 22px;
+        width: 17px;
+    }
+    header nav .six-fold .s-child a{
+        color: #000;
+        display: block;
+        padding: 0px 10px;
+        opacity: 0.7;
+        font-size: .75em;
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+    @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+      
+        to {
+          opacity: 1;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      
+      .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+      }
+
+    .container{
+        width: 90%;
+        display: none;
+    }
+    /* .about{
+        padding: 0;
+    } */
+/* 
+    .logo{
+        margin-left: 20px;
+    } */
+
+    /* .logo img{
+        width: 74px;
+        height: 25px;
+    } */
+    /* .menu-toggler{
+        position: relative;
+        display: block;
+        float: right;
+        top: 16px;
+        left: 70%;
+    } */
+/*===================================================*/
+
+    .fa{
+       font-size: 40px;
+    }
+
+    #map{
+        height: 280px;
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .navigator{
+        max-width: 480px;
+        width: 100%;
+        margin: 0;
+        bottom: 0;
+    }
+
+    .choose-country{
+        max-width: 480px;
+        width: 100%;
+    }
+
+
+    .central{
+        max-width: 480px;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .central .manual{
+        height: 40px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.61;
+        letter-spacing: normal;
+        text-align: center;
+        color: #43484d;
+    }
+
+    .phone-models{
+        max-width: 480px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .small{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .faq{
+        margin: 10px auto;
+        width: 90%;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #43484d;
+    }
+    .w3-container{
+        max-width: 480px;
+        width: 90%;
+    }
+
+    .accordion{
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+    }
+
+    .font{
+        padding: 0;
+        width: 100%;
+    }
+    .w3-container h2{
+        max-width: 480px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    .font h2 a{
+        font-size: 18px;
+    }
+    
+    .w3-container p {
+        width: 70%;
+        opacity: 0.7;
+        font-family: OpenSans;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.44;
+        letter-spacing: normal;
+        color: #494b4e;
+        background-color: #ffffff;
+        margin-left: 35px;
+        margin-top: -10px;
+    }
+
+    
+/*FOOTER*/
+
+.footer{
+    max-width: 480px;
+    width: 100%;
+}
+
+.final{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-product,
+.about-company{
+    padding-left: 2px !important;
+    margin-bottom: 0;
+    font-size: 13px; 
+    height: 18px;
+    font-family: Roboto;
+    font-weight: normal;
+    color: #444444;
+}
+
+.first ul li,
+.secondary ul li{
+    animation: fadeInOut ease-in-out 400ms;
+    font-size: 13px;
+}
+.first ul li:hover,
+.secondary ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mdclogo img{
+    height: 40px;
+    width: auto;
+}
+
+.des3{
+    width: 260px;
+}
+
+.foremost{
+    text-align: center;
+    align-self: center;
+    margin-bottom: 8px;
+}
+    
+.first,
+.secondary{
+    margin: 0 auto;
+    border-top: 1px solid #979797;
+    width: 283px;
+}
+
+.test{
+    display: none;
+    transition: .4s;        
+}
+
+
+@-webkit-keyframes fadeInOut {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInOut {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+
+} 

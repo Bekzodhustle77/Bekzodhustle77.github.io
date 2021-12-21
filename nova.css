@@ -1,0 +1,820 @@
+/**  Base styles  **/
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+a {
+	color: inherit;
+}
+
+.whole {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+.container {
+	width: 84%;
+	margin: 0 auto;
+}
+
+.intro {
+	height: 617px;
+	background-image: url('img/nova.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*** Header ***/
+header {
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.43) 50%);
+	max-height: 69px;
+	position: fixed;
+	top: 0;
+	width: 1400px;
+	z-index: 900;
+}
+
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.item {
+	padding: 20px 0;
+}
+
+/* Models */
+.models{
+	color: white;
+	align-self: center;
+	padding: 35px 42px 35px 0;
+	font-weight: 500;
+	opacity: .5;
+	cursor: pointer;
+}
+
+.arrow {
+	color: white;
+	padding-left: 4px;
+	padding-top: 12px;
+}
+
+.item:hover {
+	opacity: 1;
+	transition: .4s;
+}
+
+/* About US */
+.about {
+	align-self: center;
+	padding: 35px 42px 35px 0;
+	opacity: 0.5;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 500;
+	color: white;
+	padding-right: 41px;
+	cursor: pointer;
+}
+
+/* Support */
+.support {
+	align-self: center;
+	padding: 35px 31px 35px 0;
+	opacity: 0.5;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* Get Buy */
+.buy {
+	display: flex;
+	align-self: center;
+	color: black;
+	height: 40px;
+	width: 132px;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1px;
+	background-color: white;
+	box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	color: #282b31;
+	cursor: pointer;
+}
+
+/* Lang*/
+
+.lang {
+	align-items: center;
+	padding-left: 31px;
+}
+
+.shape {
+	widht: 23px;
+	height: 23px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.shape:hover {
+	opacity: 1;
+	transition: .4s;
+}
+
+
+.logo {
+	margin-right: auto;
+	cursor: pointer;
+}
+
+/* Definition */
+.left {
+	text-align: right;
+}
+
+.definition {
+	margin-top: 223px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.mdc-primelite {
+	text-align: left;
+	padding-bottom: 36px;
+	color: white;
+}
+
+
+
+.Lite {
+	padding-left: 20px;
+	font-family: 'Prosto One', cursive;
+	font-size: 64px;
+	line-height: 42px;
+	text-align: left;
+}
+
+.Prime {
+	font-family: 'Prosto One', cursive;
+	font-size: 64px;
+	line-height: 42px;
+	text-align: left;
+	padding-bottom: 24px;
+	border-bottom: 4px solid white;
+	border-radius: 2px;
+}
+
+
+/* Texts */
+
+.magnificient {
+	margin-top: 20px;
+	padding-right: 1em;
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 32px;
+	text-align: left;
+	opacity: 0.8;
+	color: white;
+}
+
+.surf {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+/********************************  Second Part   *********************************/
+
+.second {
+	height: 800px;
+	background-image: url('img/nova-camera.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+/* -- Alternative definition --*/
+.alternative-definition {
+	position: absolute;
+	top: 176px;
+	right: 80px;
+	display: flex;
+	flex-direction: column;
+}
+
+.camera-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	padding-bottom: 34px;
+	border-bottom: 4px solid white;
+	border-radius: 4px;
+	color: #ffffff;
+}
+
+.camera-nova-definition {
+	font-family: 'Roboto', sans-serif; 
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: left;
+	margin-top: 70px;
+	color: #ffffff;
+	opacity: 0.8
+}
+
+.infinity-nova	{
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 34px;
+	border-bottom: 4px solid white;
+	border-radius: 4px;
+}
+
+
+.display-nova	{
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;
+	padding-left: 20px;
+}
+
+.display-nova-definition{
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 32px;
+	letter-spacing: normal;
+	text-align: left;
+	color: #ffffff;
+	margin-top: 70px;
+	opacity: 0.8
+}
+
+
+.cpu-of-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;	
+}
+
+
+.memory-of-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 34px;
+	border-bottom: 4px solid white;
+	border-radius: 4px;	
+}
+
+.cpu-nova-definition {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 70px;
+  opacity: .9;
+}
+
+.ram {
+	font-weight: bold;	
+}
+
+.dimension-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 42px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 34px;
+	border-bottom: 4px solid white;
+	border-radius: 4px;		
+}
+
+.dimension-nova-definition{
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: left;
+	color: #ffffff;	
+	margin-top: 70px;
+	
+}
+
+.battery-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 34px;
+	border-bottom: 4px solid white;
+	border-radius: 4px; 
+}
+
+.battery-nova-definition {
+	font-family: Roboto;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: left;
+	color: #ffffff;
+	margin-top: 70px;
+	opacity: 0.8
+}
+
+
+.fingerprint-of-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;
+}
+
+.sensor-of-nova {
+	font-family: 'Open Sans';
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 56px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 20px;
+	border-bottom: 4px solid white;
+	border-radius: 4px;
+}
+
+.fingerprint-nova-definition {
+	padding-top: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 32px;
+	text-align: left;
+	color: #ffffff;
+}
+
+/* -- Specifications --*/
+
+.specifications {
+	height: 174px;
+	width: 82%;
+	margin: 0 auto;
+	position: relative;
+	top: 83%;
+	box-shadow: 0 15px 43px 0 rgba(0, 0, 0, 0.11);
+	border-radius: 6px;
+	background-color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section {
+	flex-basis: 16.6%;
+	height: 97%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.for-flex {
+	border-right: 1px solid #bdc6cf;
+    display: flex;
+    height: 70.5%;
+    width: 100%;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.battery {
+	border-right: none;
+}
+
+.text {
+	margin-top: auto;
+	opacity: 0.8;
+	font-family: Roboto;
+	line-height: 14px;
+	color: #0070c4;
+}
+
+.features {
+	margin-top: 25px;
+}
+
+/* Hover or active **/
+
+.section:hover {
+	box-sizing: content-box;
+	border-bottom: 4px solid #0070c4;
+}
+
+/********************************  Third Part   *********************************/
+
+.third {
+	background-color: #000000;
+	height: 630px;
+}
+
+/*******************  Third Part   **********************/
+
+.opport {
+	padding-top: 145px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.Connectivity{
+	font-family: 'Open Sans';
+	font-size: 26px;
+	line-height: 34px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 13px;
+}
+
+.dual-sim {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.gps {
+	font-family: 'Open Sans';
+	font-size: 26px;
+	line-height: 34px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 13px;
+}
+
+.agps {
+	width: 234px;
+	height: 72px;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.sensors {
+	font-family: 'Open Sans';
+	font-size: 26px;
+	line-height: 34px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 13px;
+}
+
+.compass {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+	color: #ffffff;
+	opacity: 0.9;
+}
+
+.multimedia {
+	font-family: 'Open Sans';
+	font-size: 26px;
+	line-height: 34px;
+	text-align: left;
+	color: #ffffff;
+	padding-bottom: 13px;
+}
+
+.audio {
+	color: #ffffff;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	opacity: 0.9;
+}
+
+.mp3 {
+	color: #ffffff;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+	opacity: 0.9;
+}
+
+.video {
+	color: #ffffff;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	opacity: 0.9;
+}
+
+.avi {
+	color: #ffffff;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: left;
+	opacity: 0.9;
+}
+
+
+
+/*   ---  Accessories  ---   */
+
+.accessories {
+	width: 86%;
+	margin: 0 auto;
+	height: 209px;
+	position: relative;
+	bottom: -120px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.part {
+	height: 209px;
+	flex-basis: 173px;
+	margin-right: 20px;
+	border-radius: 6px;
+	box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+	height: 209px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.for-pic {
+	width: 172px;
+	height: 164px;
+}
+
+.for-title {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	color: #43484d;
+}
+
+.usb,
+.adapter {
+	background-color: #ffffff;
+}
+
+.adapter {
+	margin-right: 0;
+}
+
+
+
+
+
+
+
+/*******************************************  Footer   *************************************************************/
+
+footer {
+	height: 600px;;
+}
+
+
+.foot {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: 35%;
+}
+
+.mdc-logo {
+	height: 41px;
+	width: 105px;
+	margin-bottom: 28px;
+}
+
+.reference {
+	opacity: 0.8;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: left;
+	color: #444444;
+	margin-bottom: 12px;
+}
+
+/********  Social networks  ********/
+
+.flex-order {
+	display: inline-flex;
+	border: 1px solid #e7e8ea;
+	border-radius: 6px;
+}
+
+.pad {
+	padding: 14px;
+}
+
+.icon {
+	font-size: 18px;
+	color: #b9bdc3;
+}
+
+.face {
+	border-right: 1px solid #e7e8ea;
+	border-left: 1px solid #e7e8ea;
+}
+
+.fa-twitter:hover {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	background-color: #1da1f2;
+	color: white;
+	transition: .5s ease-in-out; 
+}
+
+.fa-facebook:hover {
+	background-color: #3B5998;
+	color: white;
+	transition: .5s ease-in-out; 
+}
+
+.fa-instagram:hover {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) ;
+	color: white;
+	transition: .5s ease-in-out; 
+}
+
+/********  Social networks end  ********/
+
+.our-products {
+	font-family: 'Prosto One', cursive ;
+	font-size: 20px;
+	text-align: left;
+	color: #444444;
+	margin-bottom: 20px;
+}
+
+.products {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	color: #444444;
+	margin-bottom: 12px;
+}
+
+.about-company {
+	font-family: 'Prosto One', cursive ;
+	font-size: 20px;
+	text-align: left;
+	color: #444444;
+	margin-bottom: 20px;
+}
+
+.last {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	text-align: left;
+	color: #444444;
+	margin-bottom: 12px;
+}
+
+.end {
+	position: relative;
+	bottom: -50%;
+	margin-top: 60px;
+	margin-bottom: 26px;
+	text-align: center;
+}
+
+@font-face {
+	font-family: cadillac;
+	src: url(fonts/CadillacSans/CadillacSansA-Medium.ttf);
+}
+
+.copyright {
+	font-family: cadillac;
+	font-size: 11px;
+	color: #999ea8;
+	text-align: left;
+}
+
+/*==============================================
+================================================
+               MODELS POPUP
+===============================================
+===============================================*/
+#wrapper{
+    align-content: center !important;
+    position: relative ;
+    max-width: 1440px;
+}
+
+.popup a{
+    text-decoration: none;    
+    color: #000;
+}
+.phone_icons{
+    width: 25px;
+    height: 28px;
+    margin: 0;
+}
+
+
+.model_font{
+    vertical-align: 8px !important;
+    font-size: 16px;
+    font-family: 'Prosto One';
+    margin-left: 7px;
+    
+} 
+.popup{
+    z-index: 2;
+    padding: 0;
+    background: #fff;
+    position: absolute !important;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    border: 1px solid #ccc;
+    height: 60px;
+    width: 80%;
+    align-items: center;
+    border-radius: 0.25rem;
+    left: -11% !important;
+    top: 20px !important;
+    box-shadow: 0 30px 40px 0 rgba(143, 138, 131, 0.4);
+}
+
+.phone_icons:hover {
+    box-shadow: 0 6px 12px 0 rgba(40, 43, 49, 0.08);
+    cursor: pointer;
+}
+.model_font:hover > {
+    color: #0070c4;
+}
+
+
+
